@@ -34,6 +34,7 @@
     - 同步本地仓库和github仓库：`git pull git@github.com:用户名/仓库名`，成功后会发现在github上创建的README.md已经成功载入到本地。
 - git的使用与命令
   - **git中的文件状态更改**：git中的文件有三种状态：modify，stage，commited。所有的文件在被clone下来之后都是commited状态，当对文件进行修改之后变为modify状态，add一个文件则变成stage状态，此时文件存放在临时存储区，若确认修改，则需要用：`git commit -m “注释”`提交修改。
+    - 注：因为修改文件之后文件变为modify状态，但是comit只能提交stage状态的文件，因此修改文件过后需要add一下，变为stage状态，之后就可以commit了。modify->stafe->commited
   - 添加和删除文件：
     - 在本地添加单一文件：`git add 文件名` 
     -  在本地添加多个文件：`git add .`
@@ -51,3 +52,7 @@
 - 参考教程：<https://www.cnblogs.com/Pual623548198/p/7092612.html>
 - git命令大全：<https://www.cnblogs.com/tocy/p/git-command-line-manual.html>
 
+## 代码克隆
+
+- 将github上代码仓库上的代码clone到指定文件夹：git clone git@github.com:用户名/仓库名.git [制定文件夹路径]
+- 若不指定文件夹，则默认clone到当前git bash所在的文件夹。
