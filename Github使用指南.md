@@ -48,3 +48,6 @@
     - 切换分支：`git checkout 分支名`
     - merge：`git checkout master  git merge 分支名`
     - 删除分支：`git branch -d 分支名`
+- 参考教程：<https://www.cnblogs.com/Pual623548198/p/7092612.html>
+- git命令大全：<https://www.cnblogs.com/tocy/p/git-command-line-manual.html>
+
